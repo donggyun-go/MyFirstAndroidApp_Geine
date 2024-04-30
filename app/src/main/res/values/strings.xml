@@ -14,4 +14,5 @@
     <string name="male">남성</string>
     <string name="female">여성</string>
     <string name="no">공개안함</string>
+    <string name="todo">TODO</string>
 </resources>
