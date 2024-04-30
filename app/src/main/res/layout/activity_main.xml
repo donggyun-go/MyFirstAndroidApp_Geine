@@ -5,31 +5,55 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/id"/>
+
+    <EditText
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:ignore="UselessParent">
+        android:layout_height="wrap_content"
+        android:hint="@string/editEmail"
+        android:inputType="textEmailAddress"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:autofillHints="false"
+        />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/hello_my_first_app"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Hello"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/editPassword"
+        android:inputType="textPassword"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:autofillHints="false"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/makeProject"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nickname"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/editNickname"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:imeOptions="actionGo"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:autofillHints="false"/>
 
 
-    </LinearLayout>
 
 
   </LinearLayout>
