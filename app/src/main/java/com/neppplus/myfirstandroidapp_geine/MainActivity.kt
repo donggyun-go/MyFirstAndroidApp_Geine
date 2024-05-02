@@ -30,6 +30,10 @@ class MainActivity : AppCompatActivity() {
             // 데이터베이스를 통해 로그인 로직 실행
             if (dbHelper.checkUser(inputId, inputPwd)) {
                 Toast.makeText(this, "로그인 성공", Toast.LENGTH_SHORT).show()
+
+                // 로그인 성공 후 RoomActivity로 이동
+                val intent = Intent(this, RoomActivity::class.java)
+                startActivity(intent)
             } else {
                 Toast.makeText(this, "로그인 실패", Toast.LENGTH_SHORT).show()
             }
