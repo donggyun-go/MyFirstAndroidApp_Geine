@@ -34,7 +34,7 @@ class RoomAdapter(
         val txtRoomDescription = row.findViewById<TextView>(R.id.RoomDescription)
 
         // 데이터를 뷰에 설정
-        txtRoomPrice.text = roomData.price.toString()
+        txtRoomPrice.text = roomData.getFormattedPrice()
         txtRoomInfo.text = "${roomData.address} / ${roomData.getFormattedFloor()}"
         txtRoomDescription.text = roomData.description
 
