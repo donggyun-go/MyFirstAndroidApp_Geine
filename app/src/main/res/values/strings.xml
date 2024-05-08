@@ -18,5 +18,7 @@
     <string name="cancel">취소</string>
     <string name="login">로그인</string>
     <string name="signup_prompt">회원가입 하시겠습니까?</string>
+    <string name="addressName">행정구역</string>
+    <string name="floor">층수</string>
 
 </resources>
